@@ -29,7 +29,16 @@ Space Complexity: O(n)
 
 ## Insertion Sort
 
-1. Take the last element of the array.
+Imagine you want to order a hand of playing cards, from the lowest value to the highest. We're going to look at the left-most card in your hand, and put it where it should belong. Then, we're going to look at the card to the right of that and put it where it belongs.
+
+1. Begin with the first element of an array, and iterate through all of them (index = i)
+2. Save the value at index i in a temporary variable, and create an index behind our curret i (loc = i - 1).
+3. Begin traversing backwards from the left of the current indexed element.
+   * While the previous elements are greater than the value of the current indexed element (i), begin shifting them to the right.
+4. Once values to the left are no longer larger than our temporary stored element in step 2, we know that it is in the correct location. Take the saved value and put it above the index of loc. The result of this operation is having all elements that we 'passed' by with the 'loc' variable have been shifted to the right.
+5. Repeat steps 2 through 4.
+
+Insertion sort is not the fastest sorting algorithm, but it only takes up O(1) space, giving a tradeoff of speed for space required.
 
 Best Case: O(n)
 Worst Case: O(n^2)
