@@ -7,14 +7,15 @@
     "start": "npm run build",
     "build": "rm -rf dist && tsc",
     "watch": "nodemon -e ts --watch src -x \"npm run build\"",
-    "quick-sort": "npm run build && node dist/quick-sort.js",
-    "merge-sort": "npm run build && node dist/merge-sort.js",
-    "insertion-sort": "npm run build && node dist/insertion-sort.js"
+    "quick-sort": "npm run build && node dist/sorting/quick-sort.js",
+    "merge-sort": "npm run build && node dist/sorting/merge-sort.js",
+    "insertion-sort": "npm run build && node dist/sorting/insertion-sort.js",
+    "bubble-sort": "npm run build && node dist/sorting/bubble-sort.js"
   },
   "author": "Robert Crowdis",
   "license": "ISC",
   "devDependencies": {
-    "@types/node": "^8.0.26",
+    "@types/node": "^14.0.5",
     "nodemon": "^2.0.4",
     "typescript": "^3.9.3"
   }
