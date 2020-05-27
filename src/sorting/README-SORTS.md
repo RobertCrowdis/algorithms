@@ -38,9 +38,18 @@ Average Case: O(n^2)
 
 ### Bubble Sort
 
-1. Starting with the first element, compare with the next element
-2. If the current element is greater than the next element, swap them.
-3. If the current element is less than the next element, move to the next element
+Bubble Sort goes through each element of the array and compares it to the element after it.
+
+Generally, this sorting method is very inefficient and is rarely used, but it is still good to know how it works.
+
+1. Point at the first element in an array and prepare to loop through all of them (index = i)
+2. Enter a second loop that will move through all the elements (index = j, starting at index i)
+3. Do one of the following:
+  * If the current element (j) is greater than the next element (j + 1), swap them and move to the next element (increment j).
+  * If the current element (j) is less than the next element (j + 1), move to the next element (increment j).
+4. Repeat steps 1 through 3 until index i has iterated through all the elements.
+
+Even if the array is sorted, it must be checked to make sure that there are no more swaps available.
 
 Best Case: O(n)
 Worst Case: O(n ^ 2)
