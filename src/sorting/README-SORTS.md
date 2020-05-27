@@ -1,6 +1,6 @@
 # Sorts
 
-### Quick Sort
+## Quick Sort
 
 A Divide and Conquer algorithm that works with recursion. It works in the following steps:
 
@@ -9,14 +9,12 @@ A Divide and Conquer algorithm that works with recursion. It works in the follow
 Note: What pivot you choose DOES matter! Generally, you choose the first or last element.
 The best case would be the pivot being the middle-most element already.
 
-
-It creates two empty arrays
-
 Best Case: O(n log n)
 Worst Case: O(n ^ 2)
 Average Case: O(n log n)
+Space Complexity: O(log n)
 
-### Merge Sort
+## Merge Sort
 
 A Diving and Conquer algorithm that works with recursion.
 
@@ -27,16 +25,18 @@ A Diving and Conquer algorithm that works with recursion.
 Best Case: O(n log n)
 Worst Case: O(n log n)
 Average Case: O(n log n)
+Space Complexity: O(n)
 
-### Insertion Sort
+## Insertion Sort
 
 1. Take the last element of the array.
 
 Best Case: O(n)
 Worst Case: O(n^2)
 Average Case: O(n^2)
+Space Complexity: O(1)
 
-### Bubble Sort
+## Bubble Sort
 
 Bubble Sort goes through each element of the array and compares it to the element after it.
 
@@ -54,3 +54,4 @@ Even if the array is sorted, it must be checked to make sure that there are no m
 Best Case: O(n)
 Worst Case: O(n ^ 2)
 Average Case: O(n ^ 2)
+Space Complexity: O(1)
