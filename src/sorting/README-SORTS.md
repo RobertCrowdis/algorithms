@@ -6,7 +6,7 @@ A Divide and Conquer algorithm that works with recursion. It works in the follow
 
 1. Grab an array. Find the pivot point in this array.
 2. Move elements that are smaller than the pivot point to the left of it, and elements larger than the pivot to the right of it.
-Note: What pivot you choose DOES matter! Generally, you choose the first or last element.
+Note: What pivot you choose DOES matter! If you don't know which element to choose, pick the first or last element.
 The best case would be the pivot being the middle-most element already.
 
 Best Case: O(n log n)
@@ -19,8 +19,12 @@ Space Complexity: O(log n)
 A Diving and Conquer algorithm that works with recursion.
 
 1. Split an array into a left and a right half.
-   a. If the array is of size one, return instead.
-2. 
+   * If the array contains only one element, we return that element instead.
+2. Continue splitting each of these arrays into smaller left and right arrays, using recursion.
+3. When the arrays begin to bubble up, begin combining the left and right arrays together.
+   * If the first left element is smaller than the first right element, then shift it to the result. Otherwise, shift the right element.
+   * Should either the left or right array run out of elements, simply shift the rest of the elements and push them onto the result array.
+4. Return the new array back up until it is merged with all of the other arrays caused from recursion. The final result is one sorted array.
 
 Best Case: O(n log n)
 Worst Case: O(n log n)
