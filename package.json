@@ -15,7 +15,7 @@
   "license": "ISC",
   "devDependencies": {
     "@types/node": "^8.0.26",
-    "nodemon": "^1.12.1",
-    "typescript": "^2.4.2"
+    "nodemon": "^2.0.4",
+    "typescript": "^3.9.3"
   }
 }
