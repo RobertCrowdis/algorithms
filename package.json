@@ -10,7 +10,10 @@
     "quick-sort": "npm run build && node dist/sorting/quick-sort.js",
     "merge-sort": "npm run build && node dist/sorting/merge-sort.js",
     "insertion-sort": "npm run build && node dist/sorting/insertion-sort.js",
-    "bubble-sort": "npm run build && node dist/sorting/bubble-sort.js"
+    "bubble-sort": "npm run build && node dist/sorting/bubble-sort.js",
+    "in-order-traversal": "npm run build && node dist/searching/tree-traversal.js --in-order",
+    "pre-order-traversal": "npm run build && node dist/searching/tree-traversal.js --pre-order",
+    "post-order-traversal": "npm run build && node dist/searching/tree-traversal.js --post-order",
   },
   "author": "Robert Crowdis",
   "license": "ISC",
